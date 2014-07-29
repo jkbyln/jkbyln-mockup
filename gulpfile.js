@@ -2,6 +2,6 @@
 var gulp = require('gulp');
 
 var paths = {
-  scripts: ['client/js/**/*.coffee', '!client/external/**/*.coffee'],
-  images: 'client/img/**/*'
+  scripts: 'site/assets/src/js/**/*.js',
+  images: 'site/assets/src/img/**/*'
 };
