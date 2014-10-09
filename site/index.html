@@ -8,10 +8,36 @@
 <body>
   <div class="container">
     <main class="main-content">
-      <div class="jkbyln-logo">
-        <img src="assets/src/img/jkbyln-logo.svg" alt="Behold! JKBYLN">
+      <div id="animate-this" class="jkbyln-logo">
+        <svg id="svg-test" width="585px" height="241px" viewBox="0 0 585 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <title>jkbyln-logo</title>
+          <defs>
+            <filter id="dropshadow" height="130%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+              <feOffset dx="2" dy="2" result="offsetblur"/>
+              <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+              </feComponentTransfer>
+              <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <path id="jkbyln-path-1" d="M106.874074,0 L188,0.25678429 C188,0.25678429 132.278314,94.4420087 110.315501,131.408489 C77.958266,185.868835 19.0757106,188.996724 3.0275984,154.271586 C-12.3030228,121.09645 34.0728824,80.7906122 63.9683411,80.7906122 M179,67 L220.312718,67 C235.388945,65.1782292 239.239869,49.1071571 225.628705,44 M213,104 L179,67 M211,156.235308 C199.103644,176.51343 179.2254,161.458461 188.304019,145 M439,156.235308 C427.103343,176.51343 407.224597,161.458461 416.304578,145 M551,163.051608 C532.441542,192.018503 501.430597,170.51197 515.594952,147 M349,207.25302 C329.217361,236.814845 298.948105,213.031969 314.102088,189 M308.920215,58 C345.815904,59.6659222 371.099314,83.3450683 366.449332,116.2351 C362.085078,147.10763 337.890428,172.523713 299.677858,170.928805 C255.042185,169.064974 246.986519,139.414818 268.2179,121.272448 C281.933963,109.55162 307.281891,111.087155 316.882559,125.986158 M299,0.506287025 C299,0.506287025 343.841402,-4.65016952 353.95113,17.9492482 C363.270245,38.7831986 339.34832,58 311.529803,58 M393.406345,14 C360.867085,42.1584183 361.458305,85 423,85 M119,164 L213,5 M462,21 L349,207 M416,145 L489,21 M448,140 L517,23 M220,138 L303,0 M188,145 L213,104 M499,53.8496723 C513.626049,37.7223807 542.400996,27.6087911 558.004221,41.6889361 C574.410252,56.4929146 558.466478,78.2419405 545.850955,98.7474275 C533.13947,119.41129 523.247168,134.774861 514.655038,148.835062 C514.417473,149.224548 514.179908,149.612861 513.944683,150"></path>
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(10.000000, 8.000000)">
+              <use id="jkbyln-svg-logo" stroke="#4C4441" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" xlink:href="#jkbyln-path-1" style="filter:url(#dropshadow)"></use>
+            </g>
+          </g>
+        </svg>
       </div>
     </main>
   </div>
+
+  <script src="assets/src/js/lib/jquery.js"></script>
+  <script src="assets/src/js/lib/velocity.js"></script>
+  <script src="assets/src/js/lib/velocity.ui.js"></script>
+  <script src="assets/src/js/main.js"></script>
 </body>
 </html>

@@ -1,54 +1,54 @@
-/* line 2, ../../src/sass/styles.scss */
+/* line 5, ../../src/sass/styles.scss */
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 4, ../../src/sass/styles.scss */
+/* line 7, ../../src/sass/styles.scss */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 10, ../../src/sass/styles.scss */
+/* line 13, ../../src/sass/styles.scss */
 body {
   font-family: sans-serif;
   border-top: 10px solid #edcdcd;
 }
 
-/* line 19, ../../src/sass/styles.scss */
+/* line 22, ../../src/sass/styles.scss */
 .container {
   max-width: 55em;
   margin: 0 auto;
 }
 
-/* line 24, ../../src/sass/styles.scss */
+/* line 27, ../../src/sass/styles.scss */
 .main-content {
   padding: 1em;
 }
 
-/* line 28, ../../src/sass/styles.scss */
+/* line 31, ../../src/sass/styles.scss */
 .main-navigation {
   font-size: 1.1em;
   text-align: right;
   color: #4a4a4a;
 }
 
-/* line 34, ../../src/sass/styles.scss */
+/* line 37, ../../src/sass/styles.scss */
 .menu {
   list-style: none;
 }
 
-/* line 38, ../../src/sass/styles.scss */
+/* line 42, ../../src/sass/styles.scss */
 .menu li {
   display: inline-block;
   vertical-align: top;
   margin-left: -5px;
 }
 
-/* line 44, ../../src/sass/styles.scss */
+/* line 50, ../../src/sass/styles.scss */
 .menu a {
   margin: .25em;
   padding: 0 .25em;
@@ -59,18 +59,18 @@ body {
           transition: border-bottom-color 0.25s ease;
 }
 
-/* line 54, ../../src/sass/styles.scss */
+/* line 62, ../../src/sass/styles.scss */
 .menu a:hover,
 .menu a:active {
   border-bottom-color: #eee;
 }
 
-/* line 59, ../../src/sass/styles.scss */
+/* line 67, ../../src/sass/styles.scss */
 .menu a.active {
   border-bottom-color: #d8d8d8;
 }
 
-/* line 63, ../../src/sass/styles.scss */
+/* line 71, ../../src/sass/styles.scss */
 .jkbyln-logo {
   width: 100%;
   /*margin-top: 5em;*/
