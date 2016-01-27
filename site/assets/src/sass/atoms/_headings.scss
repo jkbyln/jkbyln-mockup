@@ -1,0 +1,33 @@
+
+/**
+ * Headings
+ * [http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/]
+ */
+
+h1, .alpha {
+  @include heading-1;
+}
+
+h2, .beta {
+  @include heading-2;
+}
+
+h3, .gamma {
+  @include heading-3;
+}
+
+h4, .delta {
+  @include heading-4;
+}
+
+h5, .epsilon {
+  @include heading-5;
+}
+
+h6, .zeta {
+  @include heading-6;
+}
+
+.subheading {
+  color: $link-color;
+}

@@ -1,0 +1,48 @@
+
+/**
+ * Text Blocks
+ * -----------
+ */
+
+p {
+  margin-bottom: $space;
+}
+
+blockquote {
+  font-style:italic;
+  border-left: 1px solid $gray;
+  color: $gray;
+  padding-left: $pad;
+  margin-bottom: $space;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: $gray-light-2;
+  margin: $space-double 0;
+}
+
+abbr {
+  border-bottom: 1px dotted $gray;
+  cursor: help;
+}
+
+small {
+  font-size: $font-size-sm;
+}
+
+
+
+/**
+ * Inline Text
+ * -----------
+ */
+
+a {
+  @include link;
+}

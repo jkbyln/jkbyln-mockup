@@ -1,0 +1,27 @@
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 10px solid #edcdcd;
+  color: $text-color;
+  font-family: sans-serif;
+  line-height: 1.4;
+  background: $background-color;
+}

@@ -1,22 +1,16 @@
-* { box-sizing: border-box; }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+@import 'lib/**/*.scss';
+@import 'vendor/**/*.scss';
+@import 'atoms/**/*.scss';
+@import 'molecules/**/*.scss';
 
-body {
-  font-family: sans-serif;
-  border-top: 10px solid #edcdcd;
-}
 
-a {
-  
-}
+
+
 
 .container {
   max-width: 55em;
+
   margin: 0 auto;
 }
 

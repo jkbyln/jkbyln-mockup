@@ -1,0 +1,82 @@
+
+/**
+ * Typography
+ * ==========
+ * Mixins and extends for fancy type-work
+ */
+
+@mixin copy-face {
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+@mixin title-face {
+  font-family: $font-primary;
+  font-weight: 700;
+}
+
+@mixin link {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 500ms;
+
+  &:hover,
+  &:focus {
+    color: $link-color--shade;
+    text-decoration: underline;
+  }
+}
+
+@mixin heading-link {
+  color: $heading-color;
+  text-decoration: none;
+  transition: color 500ms;
+
+  &:hover,
+  &:focus {
+    color: $heading-color--shade;
+    text-decoration: underline;
+  }
+}
+
+@mixin heading {
+  @include title-face;
+  margin-bottom: 0.35em;
+  color: $heading-color;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  a {
+    @include heading-link;
+  }
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 2.5em;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 2em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.8em;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 1.4em;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1.2em;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 1em;
+}

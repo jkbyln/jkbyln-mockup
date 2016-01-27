@@ -1,39 +1,30 @@
 
-var gulp    = require('gulp'),
-    rename  = require('gulp-rename'),
-    compass = require('gulp-compass'),
-    concat  = require('gulp-concat'),
-    uglify  = require('gulp-uglify'),
-
-    paths = {
-      scripts: 'site/assets/src/js/**/*.js',
-      images: 'site/assets/src/img/**/*'
-    };
+var gulp      = require('gulp');
+var sass      = require('gulp-sass');
+var sassGlob  = require('gulp-sass-glob');
+var postcss   = require('gulp-postcss');
+var autoprefixer  = require('autoprefixer');
+var csswring      = require('csswring');
 
 
-gulp.task('bower', function(cb) {
-  
-  gulp.src('./bower_components/modernizr/modernizr.js')
-    .pipe(gulp.dest('./site/assets/src/js/lib'));
+gulp.task('sass', function () {
 
-  gulp.src('./bower_components/jquery/dist/jquery.js')
-    .pipe(gulp.dest('./site/assets/src/js/lib'));
+  var processors = [
+    autoprefixer({ browsers: [ 'last 3 versions' ]}),
+    csswring
+  ];
 
-  gulp.src('./bower_components/velocity/velocity.js')
-    .pipe(gulp.dest('./site/assets/src/js/lib'));
+  gulp.src('./site/assets/src/sass/styles.scss')
+    .pipe( sassGlob())
+    .pipe( sass().on( 'error', sass.logError ))
+    .pipe( postcss( processors ))
+    .pipe( gulp.dest('./site/assets/dist/css'));
 
-  gulp.src('./bower_components/velocity/velocity.ui.js')
-    .pipe(gulp.dest('./site/assets/src/js/lib'));
-
-  gulp.src('./bower_components/normalize.css/normalize.css')
-    .pipe(rename('normalize.scss'))
-    .pipe(gulp.dest('./site/assets/src/sass/lib'));
+});
+ 
+gulp.task('watch', function () {
+  gulp.watch('./site/assets/src/sass/**/*.scss', ['sass']);
 });
 
 
-
-gulp.task('compass', function() {
-
-})
-
-gulp.task('default', ['bower']);
+gulp.task('default', ['watch']);
