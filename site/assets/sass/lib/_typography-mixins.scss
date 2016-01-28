@@ -6,13 +6,13 @@
  */
 
 @mixin copy-face {
-  font-family: $font-primary;
+  // font-family: $font-primary;
   font-weight: 400;
 }
 
 @mixin title-face {
-  font-family: $font-primary;
-  font-weight: 700;
+  // font-family: $font-primary;
+  font-weight: 400;
 }
 
 @mixin link {
@@ -44,7 +44,6 @@
   margin-bottom: 0.35em;
   color: $heading-color;
   line-height: 1.2;
-  text-transform: uppercase;
 
   a {
     @include heading-link;

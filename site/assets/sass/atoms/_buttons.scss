@@ -1,0 +1,13 @@
+
+.text-button {
+
+  &:after {
+    content: "\00bb";
+    margin-left: .25em;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}

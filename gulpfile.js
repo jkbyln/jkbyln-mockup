@@ -1,5 +1,7 @@
 
 var gulp      = require('gulp');
+var concat    = require('gulp-concat');
+var uglify    = require('gulp-uglify');
 var sass      = require('gulp-sass');
 var sassGlob  = require('gulp-sass-glob');
 var postcss   = require('gulp-postcss');
@@ -14,16 +16,22 @@ gulp.task('sass', function () {
     csswring
   ];
 
-  gulp.src('./site/assets/src/sass/styles.scss')
+  gulp.src('./site/assets/sass/styles.scss')
     .pipe( sassGlob())
     .pipe( sass().on( 'error', sass.logError ))
     .pipe( postcss( processors ))
-    .pipe( gulp.dest('./site/assets/dist/css'));
+    .pipe( gulp.dest('./site/assets/css'));
 
 });
+
+
+gulp.task('js', function () {
+
+});
+
  
 gulp.task('watch', function () {
-  gulp.watch('./site/assets/src/sass/**/*.scss', ['sass']);
+  gulp.watch('./site/assets/sass/**/*.scss', ['sass']);
 });
 
 

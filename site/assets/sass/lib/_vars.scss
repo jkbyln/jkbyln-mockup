@@ -64,13 +64,9 @@ $text-color: #1a1a1a;
 $text-color--tint: lighten($text-color, 30%);
 $text-color--shade: darken($text-color, 15%);
 
-$heading-color: #030303;
+$heading-color: #262626;
 $heading-color--tint: lighten($heading-color, 30%);
 $heading-color--shade: darken($heading-color, 15%);
-
-$callout-color: #fbd746;
-$callout-color--tint: lighten($callout-color, 30%);
-$callout-color--shade: darken($callout-color, 15%);
 
 $link-color: #69b927;
 $link-color--shade: darken($link-color, 15%);
